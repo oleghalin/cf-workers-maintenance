@@ -1,0 +1,5 @@
+name = "maintenance-screen"
+main = "src/index.ts"
+compatibility_date = "2022-09-21"
+
+site = { bucket = "./public" }
