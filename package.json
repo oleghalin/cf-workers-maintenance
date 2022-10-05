@@ -17,6 +17,8 @@
   "scripts": {
     "workers:dev": "wrangler dev",
     "workers:deploy": "npm run production && wrangler publish",
+    "workers:enable": "npm run production && wrangler publish --config=wrangler.enable.toml",
+    "workers:disable": "npm run workers:deploy",
     "build": "postcss ./src/styles.css -o ./public/_dist/styles.css",
     "watch": "onchange 'tailwind.config.js' './public/**/*.html' './src/**/*.css' -- npm run build",
     "production": "NODE_ENV=production postcss ./src/styles.css -o ./public/_dist/styles.css"
